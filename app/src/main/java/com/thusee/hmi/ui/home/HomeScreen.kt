@@ -71,7 +71,7 @@ fun HomeScreen(
                 modifier = Modifier
                     .size(height = 120.dp, width = 200.dp)
                     .background(
-                        color = MaterialTheme.colorScheme.surfaceVariant,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
                         shape = RoundedCornerShape(30.dp)
                     ),
                 contentAlignment = Alignment.Center
@@ -79,7 +79,7 @@ fun HomeScreen(
                 Text(
                     text = "${state.value}",
                     style = MaterialTheme.typography.headlineLarge.copy(
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        color = MaterialTheme.colorScheme.surfaceVariant,
                         textAlign = TextAlign.Center,
                         fontWeight = FontWeight.ExtraBold,
                         fontSize = 64.sp,
