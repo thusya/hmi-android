@@ -15,6 +15,7 @@ import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
+import com.thusee.hmi.ui.home.HomeScreen
 import com.thusee.hmi.ui.theme.HMITheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -39,7 +40,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    HomeScreen()
                 }
             }
         }

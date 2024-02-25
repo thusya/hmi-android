@@ -25,11 +25,17 @@ class HomeViewModel @Inject constructor(
     }
 
     fun increment() {
-        viewModelScope.launch { counterUseCase.counterIncrement() }
+        viewModelScope.launch {
+            counterUseCase.counterIncrement()
+            _uiState.value = counterUseCase.getCurrentValue()
+        }
     }
 
     fun decrement() {
-        viewModelScope.launch { counterUseCase.counterDecrement() }
+        viewModelScope.launch {
+            counterUseCase.counterDecrement()
+            _uiState.value = counterUseCase.getCurrentValue()
+        }
     }
 
 }
