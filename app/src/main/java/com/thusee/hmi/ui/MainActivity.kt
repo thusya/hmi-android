@@ -9,13 +9,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
-import com.thusee.hmi.ui.home.HomeScreen
+import com.thusee.hmi.ui.navigation.AppNavigation
 import com.thusee.hmi.ui.theme.HMITheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -40,7 +38,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    HomeScreen()
+                    AppNavigation()
                 }
             }
         }
@@ -54,21 +52,5 @@ private fun SetBarColor(color: androidx.compose.ui.graphics.Color) {
         systemUiController.setStatusBarColor(
             color = color
         )
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    HMITheme {
-        Greeting("Android")
     }
 }
