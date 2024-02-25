@@ -1,4 +1,4 @@
-package com.thusee.hmi
+package com.thusee.hmi.ui
 
 import android.graphics.Color
 import android.os.Bundle
@@ -16,7 +16,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.thusee.hmi.ui.theme.HMITheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
