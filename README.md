@@ -1,0 +1,16 @@
+# hmi-Android 
+
+- To run this project need to use the [Android Studio Hedgehog | 2023.1.](https://developer.android.com/studio)
+- Need to have the [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+
+## Used Technologies
+
+- Android MVVM Clean code Architecture
+- [Jetpack compose](https://developer.android.com/jetpack) - Toolkit for building native UI (in a declarative way - 100% Kotlin)
+- [Compose Navigation](https://developer.android.com/jetpack/compose/navigation) - navigation using Jetpack Compose.
+- [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Composable state management.
+- [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) - Library support for Kotlin coroutines to handle the AsyncTask operations.
+- [Dagger-Hilt](https://developer.android.com/training/dependency-injection/hilt-android) - Dependency injection library for Android.
+- [MockK](https://mockk.io/)
+- JUnit5 for unit testing
+- Timber for logging
