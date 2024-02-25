@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.thusee.hmi.ui.SettingScreen
+import com.thusee.hmi.ui.settings.SettingScreen
 import com.thusee.hmi.ui.home.HomeScreen
 
 @Composable

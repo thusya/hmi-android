@@ -55,7 +55,6 @@ fun HomeScreen(
                 modifier = Modifier.size(60.dp),
                 imageVector = Icons.Filled.Settings,
                 contentDescription = "Back",
-                tint = Color.White
             )
         }
         Column(
@@ -72,7 +71,7 @@ fun HomeScreen(
                 modifier = Modifier
                     .size(height = 120.dp, width = 200.dp)
                     .background(
-                        color = Color(0xFFDFE5F5),
+                        color = MaterialTheme.colorScheme.surfaceVariant,
                         shape = RoundedCornerShape(30.dp)
                     ),
                 contentAlignment = Alignment.Center
@@ -80,7 +79,7 @@ fun HomeScreen(
                 Text(
                     text = "${state.value}",
                     style = MaterialTheme.typography.headlineLarge.copy(
-                        color = Color.Black,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
                         textAlign = TextAlign.Center,
                         fontWeight = FontWeight.ExtraBold,
                         fontSize = 64.sp,
@@ -104,7 +103,7 @@ fun HomeScreen(
                 .align(Alignment.BottomCenter),
             painter = painterResource1(id = R.drawable.jaguar_logo),
             contentDescription = null,
-            colorFilter = ColorFilter.tint(Color.White)
+            colorFilter = ColorFilter.tint(MaterialTheme.colorScheme.onSurface)
         )
     }
 }
