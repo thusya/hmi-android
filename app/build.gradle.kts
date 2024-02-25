@@ -52,6 +52,10 @@ android {
     }
 }
 
+tasks.withType<Test> {
+    useJUnitPlatform()
+}
+
 dependencies {
 
     implementation(libs.core.ktx)
@@ -80,4 +84,20 @@ dependencies {
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+
+    // JUnit5
+    testImplementation(libs.junit.jupiter)
+    testImplementation(libs.junit.jupiter.api)
+    testImplementation(libs.junit.jupiter.engine)
+    testImplementation(libs.junit.jupiter.parametrized)
+    androidTestImplementation(libs.junit.jupiter)
+
+    //Coroutines Test
+    testImplementation(libs.kotlinx.coroutines.test)
+
+    // mockk
+    testImplementation(libs.mockk)
+
+    testImplementation(libs.androidx.core)
+
 }
